@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  		<meta charset="UTF-8">
+		<title>DutchGiraffe Planning</title>
+
+		<style type="text/css">
+		body, html
+		{
+			overflow: hidden;
+			padding:0;
+			margin:0;
+		}
+		#content
+		{
+			width:400px;
+			height:400px;
+			border:1px solid black;
+			overflow:hidden;
+		}
+		#scrollable
+		{
+			
+			background-color: #ff0000;
+		}
+		</style>
+	</head>
+	<body>
+		
+		<div id="content">
+			<div id="scrollable">
+			</div>
+		</div>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script type="application/javascript" src="js/iscroll.js"></script>
+		<script type="text/javascript">
+		(function(window){
+			var scroll = new iScroll("content");
+			$("#scrollable")
+				.css("width", 600)
+				.css("height", 600);
+			setTimeout(function () { scroll.refresh(); }, 1000);
+		}(window));
+		</script>
+		
+	</body>
+</html>

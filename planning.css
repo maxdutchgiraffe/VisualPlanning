@@ -1,0 +1,331 @@
+body, html, *
+{
+	margin:0;
+	padding:0;
+	
+	-webkit-user-select: none; 
+	-moz-user-select: none; 
+	-ms-user-select: none; 
+
+
+	-o-user-select: none;
+	user-select: none;
+	cursor:default;
+
+}
+html, body{
+	overflow:hidden;
+}
+h1{
+	position:absolute;
+	font-family: "runda",sans-serif;
+	font-weight: 300;
+	font-size: 9px;
+	color:#999;
+	text-align: center;
+	top:60px;
+	letter-spacing: 1px;
+}
+
+h2{
+	position:absolute;
+	font-family: "runda",sans-serif;
+	font-weight: 300;
+	font-size: 11px;
+	color:rgba(100,100,100,1);
+	top:6px;
+	letter-spacing: 1px;
+}
+ul.project h2
+{
+	font-weight: 400;
+}
+.projectIndex h2
+{
+	margin: 0 5px;
+	color:#fff;
+	font-weight: 300;
+	position:relative;
+	min-height: 13px;
+	top:6px;
+}
+h3{
+	position:absolute;
+	font-family: "runda",sans-serif;
+	font-weight: 300;
+	text-align: center;
+	font-size: 11px;
+	color:rgba(150,150,150,1);
+	top:25px;
+}
+h4{
+	position:absolute;
+	font-family: "runda",sans-serif;
+	font-weight: 300;
+	text-align: center;
+	font-size: 11px;
+	color:rgba(150,150,150,1);
+	top:5px;
+}
+.task
+{
+	list-style-type: none;
+	height: 25px;
+	top: 0px;
+	position: absolute;
+	width: 100%;
+	border-radius: 4px;
+}.fase
+{
+	list-style-type: none;
+	min-height: 25px;
+	top: 0px;
+	position: absolute;
+	width: 100%;
+	
+}
+ul.projectFase
+{
+	height: 25px;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	cursor: pointer;
+	border-radius: 4px;
+	/*border-style:dotted;
+	border-width: 1px;*/
+}
+#daysGrid > div
+{
+	position: absolute;
+	height: 100%;
+	border-style: solid;
+	border-right-width: 0;
+	border-top-width: 0;
+	border-bottom-width: 0;
+}
+.projectIndex, .projectIndex h2,  .projectIndex div, .bgAfter, .task, .task > h2, .project > .task, .project > h2
+{
+	cursor: pointer;
+}
+div.projectIndex
+{
+
+	padding: 0;
+	position: relative;
+	width: 190px;
+	left:5px;
+	overflow:hidden;
+}
+.infoContent
+{
+	position:absolute;
+	width: 100%;
+	height: 25px;
+	top:0;
+}
+div.projectIndex > div.bg
+{
+	width:100%;
+	height:25px;
+	position: relative;
+	z-index: -1;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.156863) 0px 2px 2px 0px;
+	box-shadow: rgba(0, 0, 0, 0.156863) 0px 2px 2px 0px;
+}
+div.projectIndex > div.bgAfter
+{
+	width: 0;
+	height:0;
+	position: relative;
+	z-index: 0;
+	border-top: 5px solid blue;
+	border-right: 5px solid transparent;
+	left:185px;
+}
+ul.project
+{
+	height: 25px;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	cursor: pointer;
+	border-radius: 4px;
+}
+#contentWrapper
+{
+	position: absolute;
+}
+#wrapper
+{
+	position: absolute;
+	left:200px;
+	z-index: 1;
+}
+#nav, #dateBar
+{
+	position:relative;
+}
+#nav
+{
+	background-color: #fff;
+	height:50px;
+}
+#hscrollpane
+{
+	position: absolute;
+	display: block;
+}
+#daysGrid
+{
+	position: absolute;
+	height: 100%;
+}
+.maand, .week, .day
+{
+	position: absolute;
+}
+
+#content
+{
+	position:absolute;
+}
+#container
+{
+	position: relative;
+}
+
+#dateBar
+{
+	margin: 0px; 
+	width: 100%;
+	height:75px;
+	z-index: 1;
+}
+.barBG
+{
+	-webkit-box-shadow: rgba(0, 0, 0, 0.156863) 0px 2px 8px 0px;
+	box-shadow: rgba(0, 0, 0, 0.156863) 0px 2px 8px 0px; 
+	background-color: rgb(255, 255, 255);
+	top:5px;
+	overflow:hidden;
+}
+#legenda
+{
+	position:absolute;
+	display: inline-block;
+	height: 100%;
+}
+#legendaBar
+{
+	margin: 0px;
+	width: 200px;
+	height: 75px;
+	z-index: 1;
+	position: relative;
+}
+#legendaProjects
+{
+	position: relative;
+	width: 100%;
+	padding: 0 5px 0 0;
+	overflow: hidden;
+	background-color: #E5E5E5;
+	z-index: 0;
+}
+#legendaBG
+{
+	position: absolute;
+	background-color: #fff;
+	width: 190px;
+	height: 100%;
+	z-index: -1;
+}
+#legendaContent
+{
+	position: relative;
+}
+#projectSeperator
+{
+	height:10px;
+	width:100%;
+	position:relative;
+}
+#projectSeperator2
+{
+	height:5px;
+	width:100%;
+	position:relative;
+}
+#projects
+{
+	background-color: rgba(255, 255, 255, 0); 
+	position:relative;
+}
+.dateBarBGGradient
+{
+	position: absolute; 
+	height: 75px;
+	background-color: rgb(255, 255, 255);
+	background-image: linear-gradient(rgb(255, 255, 255) 50%, rgb(244, 244, 244) 100%);
+	width:100%;
+}
+.daysGridBGEven
+{
+	border-left-color: #F2F2F2;
+	border-left-width: 1px;
+	background-color: white;
+}
+.daysGridBGOdd
+{
+	border-left-color: #F2F2F2;
+	border-left-width: 1px;
+	background-color: #FAFAFA;
+}
+.daysGridBGToday
+{
+	border-left-color: #F2F2F2;
+	border-left-width: 1px;
+	background-color: #f0f1fa;
+}
+#todayLine
+{
+	position: absolute;
+	height: 100%;
+	top: 0;
+	border-style: solid;
+	border-right-width: 0;
+	border-top-width: 0;
+	border-bottom-width: 0;
+	border-left-color: #853333;
+	border-left-width: 1px;
+}
+.daysGridMonth
+{
+	border-left-color: #cccccc;
+	border-left-width: 1px;
+}
+.projectTrans
+{
+	-webkit-transition: height 0.3s, background-color 0.3s;
+	-moz-transition: height 0.3s, background-color 0.3s;
+	-ms-transition: height 0.3s, background-color 0.3s;
+	-o-transition: height 0.3s, background-color 0.3s;
+	transition: height 0.3s, background-color 0.3s;
+}
+.colorTrans
+{
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	-ms-transition: color 0.3s;
+	-o-transition: color 0.3s;
+	transition: color 0.3s;
+}
+.taskTrans
+{
+	-webkit-transition: top 0.3s, background-color 0.3s;
+	-moz-transition: top 0.3s, background-color 0.3s;
+	-ms-transition: top 0.3s, background-color 0.3s;
+	-o-transition: top 0.3s, background-color 0.3s;
+	transition: top 0.3s, background-color 0.3s;
+}
